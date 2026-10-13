@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="app-header">
+        <h1>Smart Task Manager</h1>
+    </header>
+    
+    <div class="app-layout">
+        <aside class="sidebar">
+            <ul>
+                <li>งานทั้งหมด</li>
+                <li>งานที่เสร็จแล้ว</li>
+            </ul>
+        </aside>
+        
+        <main class="main-content">
+           
+            <form id="taskForm" style="margin-bottom: 20px; display: flex; gap: 10px;">
+                <input type="text" id="taskInput" placeholder="เพิ่มงานใหม่..." required style="flex-grow: 1; padding: 10px;">
+                <select id="priorityInput">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit" style="padding: 10px 20px;">เพิ่มงาน</button>
+            </form>
+
+            
+            <div id="taskList"></div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
